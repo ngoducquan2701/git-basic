@@ -36,6 +36,7 @@
         object-fit: cover;
         border: 5px solid #3498db;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
       }
       .profile {
         text-align: center;
@@ -73,6 +74,27 @@
       .social-links a:hover {
         background-color: #2980b9;
       }
+      .contact-form {
+        margin-top: 20px;
+      }
+      .contact-form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      .contact-form button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .contact-form button:hover {
+        background-color: #2980b9;
+      }
     </style>
   </head>
   <body>
@@ -82,6 +104,7 @@
         <img
           src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-1/448548087_488473690336344_6858711387000663362_n.jpg?stp=dst-jpg_p200x200&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=dCBJch3HEZEQ7kNvgF1c5nj&_nc_ht=scontent.fdad2-1.fna&oh=00_AYD91g-IU6GSxPhtioJHzulFRDCAwyve51jyszpX51OXPA&oe=66B2B45E"
           alt="Ảnh đại diện"
+          id="profileImage"
         />
         <p>
           Chào mọi người! Mình là Quân, năm nay 23 tuổi. Mình đến từ Nghệ An.
@@ -101,6 +124,31 @@
         <a href="https://twitter.com/username" target="_blank">Twitter</a>
         <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
       </div>
+      <div class="contact-form">
+        <h2>Liên hệ</h2>
+        <form id="contactForm">
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="tel" id="phone" placeholder="Số điện thoại" required />
+          <button type="submit">Gửi</button>
+        </form>
+      </div>
     </div>
+
+    <script>
+      document
+        .getElementById('profileImage')
+        .addEventListener('click', function () {
+          alert('Bạn đã nhấp vào ảnh đại diện');
+        });
+
+      document
+        .getElementById('contactForm')
+        .addEventListener('submit', function (e) {
+          e.preventDefault();
+          var email = document.getElementById('email').value;
+          var phone = document.getElementById('phone').value;
+          alert('Email: ' + email + '\nSố điện thoại: ' + phone);
+        });
+    </script>
   </body>
 </html>
