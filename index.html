@@ -6,56 +6,101 @@
     <title>Giới thiệu bản thân</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
         padding: 0;
+        background-color: #f0f2f5;
+        color: #333;
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      h1,
+      h2 {
+        color: #2c3e50;
+        text-align: center;
       }
       img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #3498db;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       }
       .profile {
         text-align: center;
+        margin-bottom: 30px;
       }
       ul {
         list-style-type: none;
         padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
       }
       li {
-        margin-bottom: 5px;
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        border-radius: 20px;
+        font-weight: bold;
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
       }
       .social-links a {
-        margin-right: 10px;
+        margin: 0 10px;
         text-decoration: none;
-        color: #0073e6;
+        color: #fff;
+        background-color: #3498db;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .social-links a:hover {
+        background-color: #2980b9;
       }
     </style>
   </head>
   <body>
-    <h1>Giới thiệu bản thân</h1>
-    <div class="profile">
-      <img
-        src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-1/448548087_488473690336344_6858711387000663362_n.jpg?stp=dst-jpg_p200x200&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=dCBJch3HEZEQ7kNvgF1c5nj&_nc_ht=scontent.fdad2-1.fna&oh=00_AYD91g-IU6GSxPhtioJHzulFRDCAwyve51jyszpX51OXPA&oe=66B2B45E"
-        alt="Ảnh đại diện"
-      />
-      <p>
-        Chào mọi người! Mình là Quân, năm nay 23 tuổi. Mình đến từ Nghệ An. Hiện
-        tại mình đang ở Đà Nẵng.
-      </p>
-    </div>
-    <h2>Sở thích và Kỹ năng</h2>
-    <ul>
-      <li>Tắm biển</li>
-      <li>Đọc sách</li>
-      <li>Thể thao</li>
-    </ul>
-    <h2>Liên hệ với mình</h2>
-    <p>Bạn có thể kết nối với mình qua các mạng xã hội sau:</p>
-    <div class="social-links">
-      <a href="https://facebook.com/username" target="_blank">Facebook</a>
-      <a href="https://twitter.com/username" target="_blank">Twitter</a>
-      <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+    <div class="container">
+      <h1>Giới thiệu bản thân</h1>
+      <div class="profile">
+        <img
+          src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-1/448548087_488473690336344_6858711387000663362_n.jpg?stp=dst-jpg_p200x200&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=dCBJch3HEZEQ7kNvgF1c5nj&_nc_ht=scontent.fdad2-1.fna&oh=00_AYD91g-IU6GSxPhtioJHzulFRDCAwyve51jyszpX51OXPA&oe=66B2B45E"
+          alt="Ảnh đại diện"
+        />
+        <p>
+          Chào mọi người! Mình là Quân, năm nay 23 tuổi. Mình đến từ Nghệ An.
+          Hiện tại mình đang ở Đà Nẵng.
+        </p>
+      </div>
+      <h2>Sở thích và Kỹ năng</h2>
+      <ul>
+        <li>Tắm biển</li>
+        <li>Đọc sách</li>
+        <li>Thể thao</li>
+      </ul>
+      <h2>Liên hệ với mình</h2>
+      <p>Bạn có thể kết nối với mình qua các mạng xã hội sau:</p>
+      <div class="social-links">
+        <a href="https://facebook.com/username" target="_blank">Facebook</a>
+        <a href="https://twitter.com/username" target="_blank">Twitter</a>
+        <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+      </div>
     </div>
   </body>
 </html>
